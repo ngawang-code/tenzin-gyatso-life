@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenzin Gyatso: A Life of Light</title>
+    <style>
+        /* General body and text styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #333;
+            padding: 50px 20px;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 48px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        /* Timeline styling */
+        .timeline {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        /* Year button design */
+        .year {
+            background-color: #444;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            width: 120px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .year:hover {
+            background-color: #007bff;
+            transform: translateY(-5px);
+        }
+
+        /* Details section */
+        #details {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #222;
+            color: #fff;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 1000px;
+            margin: 40px auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Gratitude message container */
+        .gratitude-container {
+            background-color: #333;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 1000px;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .year-gratitude {
+            background-color: #444;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        .gratitude-message {
+            font-style: italic;
+            color: #ccc;
+            margin-top: 20px;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px;
+            background-color: #333;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* Animation for elements */
+        .year {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        /* Simple fade-in animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tenzin Gyatso: A Life of Light</h1>
+</header>
+
+<div class="timeline">
+    <div class="year" onclick="showDetails('1935')">1935</div>
+    <div class="year" onclick="showDetails('1937')">1937</div>
+    <div class="year" onclick="showDetails('1939')">1939</div>
+    <div class="year" onclick="showDetails('1940')">1940</div>
+    <div class="year" onclick="showDetails('1950')">1950</div>
+    <div class="year" onclick="showDetails('1951')">1951</div>
+    <div class="year" onclick="showDetails('1954')">1954</div>
+    <div class="year" onclick="showDetails('1959')">1959</div>
+    <div class="year" onclick="showDetails('1963')">1963</div>
+    <div class="year" onclick="showDetails('1967')">1967</div>
+    <div class="year" onclick="showDetails('1973')">1973</div>
+    <div class="year" onclick="showDetails('1979')">1979</div>
+    <div class="year" onclick="showDetails('1987')">1987</div>
+    <div class="year" onclick="showDetails('1989')">1989</div>
+    <div class="year" onclick="showDetails('1992')">1992</div>
+    <div class="year" onclick="showDetails('2001')">2001</div>
+    <div class="year" onclick="showDetails('2008')">2008</div>
+    <div class="year" onclick="showDetails('2011')">2011</div>
+    <div class="year" onclick="showDetails('2015')">2015</div>
+    <div class="year" onclick="showDetails('2020')">2020</div>
+    <div class="year" onclick="showDetails('2025')">2025</div>
+</div>
+
+<div id="details">Click on a year to see details.</div>
+
+<div class="gratitude-container" id="gratitude-container"></div>
+
+<script>
+    function showDetails(year) {
+        const details = {
+            '1935': {
+                info: "Born on July 6 in Taktser, Amdo, Tibet, to a farming family. His birth was marked by signs, and he was later recognized as the reincarnation of the 13th Dalai Lama. This year marked the beginning of a remarkable journey as he would soon embark on his path to becoming the spiritual and political leader of Tibet.",
+                gratitude: "Gratitude Message (1935): \"Your birth has brought hope to millions of Tibetans, and your journey will inspire generations to come.\""
+            },
+            '1937': {
+                info: "At the age of 2, Tenzin Gyatso was officially recognized as the 14th Dalai Lama. Monks from Lhasa traveled to Taktser to confirm his identity after a series of tests and signs. This marked the beginning of his spiritual training and preparation to lead Tibet.",
+                gratitude: "Gratitude Message (1937): \"Your recognition as the 14th Dalai Lama fills our hearts with pride, and we are grateful for the light you bring to our lives.\""
+            },
+            '1939': {
+                info: "Tenzin Gyatso, accompanied by his family and a large entourage, embarked on a three-month journey to Lhasa, the spiritual capital of Tibet. Upon arrival, he was officially recognized as the Dalai Lama by the Tibetan government and entered the Potala Palace in Lhasa on October 8.",
+                gratitude: "Gratitude Message (1939): \"Your arrival in Lhasa brings joy and peace to the hearts of the Tibetan people. You are a symbol of our hope and strength.\""
+            },
+            '1940': {
+                info: "On February 22, Tenzin Gyatso was enthroned as the 14th Dalai Lama, officially taking up his spiritual and political responsibilities. At the age of 4, he was faced with the responsibility of preserving Tibetan culture, teachings, and governance.",
+                gratitude: "Gratitude Message (1940): \"May your leadership guide Tibet through these turbulent times. We are grateful for your wisdom and your unwavering commitment to our people.\""
+            },
+            '1950': {
+                info: "At the age of 15, after China’s invasion of Tibet, Tenzin Gyatso assumed full political power as the head of state. He became the youngest head of state in the world, confronting challenges that included dealing with a large-scale Chinese military presence in Tibet and the difficult political situation.",
+                gratitude: "Gratitude Message (1950): \"Your courage and resolve to protect our land and people in the face of adversity inspire us all to stand firm in our belief for peace and justice.\""
+            },
+            '1951': {
+                info: "After a series of negotiations, the 17-Point Agreement was signed between the Tibetan Government and China, affirming Chinese sovereignty over Tibet. However, it led to significant political and social changes in Tibet. The Dalai Lama, though young, was forced to navigate these challenging circumstances.",
+                gratitude: "Gratitude Message (1951): \"In these challenging times, we are grateful for your strength in keeping Tibet’s spirit alive, despite the external forces pressing upon us.\""
+            },
+            '1954': {
+                info: "Tenzin Gyatso traveled to China for peace talks with Mao Zedong and other Chinese leaders, seeking to negotiate the future of Tibet. Despite initial hopes for peace, tensions continued to rise between Tibet and the Chinese government.",
+                gratitude: "Gratitude Message (1954): \"Your journey for peace represents our hope for harmony. May your efforts lead to lasting tranquility for all Tibetan people.\""
+            },
+            '1959': {
+                info: "The Tibetan Uprising of 1959 broke out in Lhasa, as tensions reached a breaking point. The Dalai Lama, fearing for his life, fled Tibet and sought asylum in India, where he established the Tibetan government-in-exile. This year marked the beginning of a new chapter for the Dalai Lama and his people.",
+                gratitude: "Gratitude Message (1959): \"Your bravery in the face of adversity and your decision to lead from afar inspire us to continue to fight for the dignity and freedom of Tibet.\""
+            },
+            '1963': {
+                info: "Tenzin Gyatso established the Tibetan Government-in-Exile in Dharamsala, India, and began working towards the preservation and promotion of Tibetan culture, language, and traditions. This year marked a significant step in the Dalai Lama’s efforts to raise global awareness about Tibet’s plight.",
+                gratitude: "Gratitude Message (1963): \"We are grateful for your determination in creating a home for our people outside Tibet and for continuing to safeguard our culture in exile.\""
+            },
+            '1967': {
+                info: "The Dalai Lama began his international travels, spreading his message of peace, compassion, and non-violence. He started engaging with international leaders, educators, and the public to raise awareness about Tibet and its situation.",
+                gratitude: "Gratitude Message (1967): \"Your travels have opened our eyes to the world’s challenges and have brought our message of peace and compassion to a global audience.\""
+            },
+            '1973': {
+                info: "Tenzin Gyatso continued to advocate for Tibet and began making connections with world leaders, human rights activists, and peace organizations. He played a significant role in the global fight for human rights and freedom for oppressed peoples.",
+                gratitude: "Gratitude Message (1973): \"Your tireless advocacy for Tibet and human rights has inspired millions. We are grateful for your unwavering commitment to justice.\""
+            },
+            '1979': {
+                info: "The Dalai Lama was invited to the United States for the first time, where he met with U.S. President Jimmy Carter. This marked a turning point in international support for Tibet.",
+                gratitude: "Gratitude Message (1979): \"Your visits have helped the world understand the true nature of Tibet’s struggle. We are grateful for the doors you continue to open for our cause.\""
+            },
+            '1987': {
+                info: "The Dalai Lama proposed a Five-Point Peace Plan for Tibet, calling for meaningful autonomy for Tibet, respect for human rights, and the protection of the environment. His efforts were met with both international support and resistance from China.",
+                gratitude: "Gratitude Message (1987): \"Your peace plan offers hope for the future. We are thankful for your courage to seek a peaceful resolution despite the obstacles in your way.\""
+            },
+            '1989': {
+                info: "In recognition of his peaceful efforts, the Dalai Lama was awarded the Nobel Peace Prize. His message of non-violence, compassion, and global responsibility was acknowledged and celebrated worldwide.",
+                gratitude: "Gratitude Message (1989): \"Winning the Nobel Peace Prize is a testament to your lifelong dedication to peace and justice. We are proud of your achievements and continue to draw strength from your example.\""
+            },
+            '1992': {
+                info: "The Dalai Lama continued to engage in peace and educational work, promoting the concept of 'Universal Responsibility' to address global issues like environmental degradation, inequality, and conflict.",
+                gratitude: "Gratitude Message (1992): \"Your teachings have shaped a generation of leaders dedicated to peace and environmental stewardship. We are thankful for your wisdom and guidance.\""
+            },
+            '2001': {
+                info: "Tenzin Gyatso stepped down from his political leadership role, transitioning the Tibetan Government-in-Exile to a more democratic structure. He handed over the responsibilities to an elected political leader, a significant step towards the future of Tibet.",
+                gratitude: "Gratitude Message (2001): \"Your selfless decision to ensure a democratic future for Tibet shows your deep commitment to our people’s autonomy and freedom.\""
+            },
+            '2008': {
+                info: "The Dalai Lama, amidst the Tibetan unrest, reaffirmed his stance for non-violence and urged the world to support Tibet’s cause in a peaceful and diplomatic manner.",
+                gratitude: "Gratitude Message (2008): \"In times of unrest, your message of peace reminds us to stay true to the path of compassion. We are grateful for your unwavering commitment to non-violence.\""
+            },
+            '2011': {
+                info: "Tenzin Gyatso announced his decision to retire from his political role, fully embracing the separation of religion and politics, while continuing his spiritual mission worldwide.",
+                gratitude: "Gratitude Message (2011): \"Your decision to step down is an inspiring testament to your faith in Tibet’s future. We are grateful for your vision of a peaceful and democratic Tibet.\""
+            },
+            '2015': {
+                info: "The Dalai Lama continued to focus on global initiatives, especially those related to promoting compassion and environmental sustainability, while also advocating for Tibet’s human rights.",
+                gratitude: "Gratitude Message (2015): \"Your efforts to spread compassion around the world continue to inspire us. We are thankful for your life-long dedication to making the world a better place.\""
+            },
+            '2020': {
+                info: "The Dalai Lama remained active in promoting peace, kindness, and compassion during the COVID-19 pandemic, emphasizing the importance of unity and collective responsibility.",
+                gratitude: "Gratitude Message (2020): \"In this time of crisis, your message of compassion and empathy reminds us of the importance of solidarity. We are grateful for your unwavering guidance during these times.\""
+            },
+            '2025': {
+                info: "The Dalai Lama continues to engage with people worldwide, advocating for peace, compassion, and the protection of human rights. His legacy as a global spiritual leader continues to grow.",
+                gratitude: "Gratitude Message (2025): \"Your legacy as a beacon of light for the world continues to inspire us. We are thankful for your compassion, wisdom, and unwavering commitment to a peaceful world.\""
+            }
+        };
+
+        const yearDetails = details[year];
+
+        // Update the details section
+        if (yearDetails) {
+            document.getElementById('details').innerHTML = `<h3>Year: ${year}</h3><p>${yearDetails.info}</p>`;
+            document.getElementById('gratitude-container').innerHTML = `
+                <div class="year-gratitude">
+                    <strong>Gratitude Message (${year}):</strong>
+                    <p>"${yearDetails.gratitude}"</p>
+                </div>
+            `;
+        } else {
+            document.getElementById('details').innerHTML = "Details not available for this year.";
+            document.getElementById('gratitude-container').innerHTML = "";
+        }
+    }
+</script>
+
+<footer>
+    <p>&copy; 2025 Tenzin Gyatso: A Life of Light. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
